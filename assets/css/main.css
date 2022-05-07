@@ -2305,3 +2305,54 @@ input, select, textarea {
 			}
 
 		}
+
+/********* Additional Styles ************/
+#header {
+  background-color: #000;
+}
+
+h1, nav li {
+  color: #fff;
+}
+
+#intro {
+  background: #C04848;  /* fallback for old browsers */
+  background: linear-gradient(rgb(0,0,0,0.7), rgba(180, 172, 172, 0.7)), url("../../images/work/flying-books.jpg");  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(rgb(0,0,0,0.7), rgba(180, 172, 172, 0.7)), url("../../images/work/flying-books.jpg"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#one {
+  background: #C04848;  /* fallback for old browsers */
+  background: linear-gradient(rgb(180, 172, 172, 0.7), rgba(0,0,0,0.7)), url("../../images/work/mermaid-surreal.jpg");  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(rgb(180, 172, 172, 0.7), rgba(0,0,0,0.7)), url("../../images/work/mermaid-surreal.jpg"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#two {
+  background: #C04848;  /* fallback for old browsers */
+  background: linear-gradient(rgb(0,0,0,0.8), rgba(255,255,255,0.1)), url("../../images/work/mother-nature.jpg");  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(rgb(0,0,0,0.8), rgba(255,255,255,0.1)), url("../../images/work/mother-nature.jpg"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#contact {
+  background: #C04848;  /* fallback for old browsers */
+  background: linear-gradient(rgb(255,255,255,0.9), rgba(255,255,255,0.1)), url("../../images/work/waterfall.JPG");  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(rgb(255,255,255,0.9), rgba(255,255,255,0.1)), url("../../images/work/waterfall.JPG"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#intro p {
+  font-size: 2.5rem;
+  line-height: normal;
+}
+
+#contact p {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
