@@ -2235,42 +2235,6 @@ input, select, textarea {
 
 		}
 
-/* Intro */
-
-	#intro {
-		background: url("images/overlay.png"), url("../../images/work/flying-books.jpg");
-		background-size: 256px 256px, cover;
-		background-attachment: fixed, fixed;
-		background-position: top left, bottom center;
-		background-repeat: repeat, no-repeat;
-	}
-
-/* One */
-
-	#one {
-		background: url("images/overlay.png"), url("../../images/work/mermaid-surreal.jpg");
-		background-size: 256px 256px, cover;
-		background-attachment: fixed, fixed;
-		background-position: top left, center center;
-	}
-
-/* Two */
-
-	#two {
-		background: url("images/overlay.png"), url("../../images/work/mother-nature.jpg");
-		background-size: 256px 256px, cover;
-		background-attachment: fixed, fixed;
-		background-position: top left, center center;
-	}
-
-/* Contact */
-
-	#contact {
-		overflow: hidden;
-		padding-bottom: 0;
-    background: url("images/overlay.png"), url("../../images/work/waterfall.JPG");
-	}
-
 		#contact .box {
 			-moz-transition: -moz-transform 1s ease;
 			-webkit-transition: -webkit-transform 1s ease;
@@ -2315,44 +2279,273 @@ h1, nav li {
   color: #fff;
 }
 
-#intro {
-  background: #C04848;  /* fallback for old browsers */
-  background: linear-gradient(rgb(0,0,0,0.7), rgba(180, 172, 172, 0.7)), url("../../images/work/flying-books.jpg");  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(rgb(0,0,0,0.7), rgba(180, 172, 172, 0.7)), url("../../images/work/flying-books.jpg"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#one {
-  background: #C04848;  /* fallback for old browsers */
-  background: linear-gradient(rgb(180, 172, 172, 0.7), rgba(0,0,0,0.7)), url("../../images/work/mermaid-surreal.jpg");  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(rgb(180, 172, 172, 0.7), rgba(0,0,0,0.7)), url("../../images/work/mermaid-surreal.jpg"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#two {
-  background: #C04848;  /* fallback for old browsers */
-  background: linear-gradient(rgb(0,0,0,0.8), rgba(255,255,255,0.1)), url("../../images/work/mother-nature.jpg");  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(rgb(0,0,0,0.8), rgba(255,255,255,0.1)), url("../../images/work/mother-nature.jpg"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#contact {
-  background: #C04848;  /* fallback for old browsers */
-  background: linear-gradient(rgb(255,255,255,0.9), rgba(255,255,255,0.1)), url("../../images/work/waterfall.JPG");  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(rgb(255,255,255,0.9), rgba(255,255,255,0.1)), url("../../images/work/waterfall.JPG"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 
 #intro p {
   font-size: 2.5rem;
   line-height: normal;
 }
 
-#contact p {
-  font-size: 1.5rem;
-  font-weight: 600;
+
+#intro, #two, #contact {
+  background-color: #3BC1AC;
+  background-image:
+  radial-gradient(circle at 100% 150%, #3BC1AC 24%, #42D2BB 25%, #42D2BB 28%, #3BC1AC 29%, #3BC1AC 36%, #42D2BB 36%, #42D2BB 40%, transparent 40%, transparent),
+  radial-gradient(circle at 0    150%, #3BC1AC 24%, #42D2BB 25%, #42D2BB 28%, #3BC1AC 29%, #3BC1AC 36%, #42D2BB 36%, #42D2BB 40%, transparent 40%, transparent),
+  radial-gradient(circle at 50%  100%, #42D2BB 10%, #3BC1AC 11%, #3BC1AC 23%, #42D2BB 24%, #42D2BB 30%, #3BC1AC 31%, #3BC1AC 43%, #42D2BB 44%, #42D2BB 50%, #3BC1AC 51%, #3BC1AC 63%, #42D2BB 64%, #42D2BB 71%, transparent 71%, transparent),
+  radial-gradient(circle at 100% 50%, #42D2BB 5%, #3BC1AC 6%, #3BC1AC 15%, #42D2BB 16%, #42D2BB 20%, #3BC1AC 21%, #3BC1AC 30%, #42D2BB 31%, #42D2BB 35%, #3BC1AC 36%, #3BC1AC 45%, #42D2BB 46%, #42D2BB 49%, transparent 50%, transparent),
+  radial-gradient(circle at 0    50%, #42D2BB 5%, #3BC1AC 6%, #3BC1AC 15%, #42D2BB 16%, #42D2BB 20%, #3BC1AC 21%, #3BC1AC 30%, #42D2BB 31%, #42D2BB 35%, #3BC1AC 36%, #3BC1AC 45%, #42D2BB 46%, #42D2BB 49%, transparent 50%, transparent);
+  background-size:100px 50px;
+}
+
+#one, #work {
+  background-color: #42D2BB;
+}
+
+#one .box {
+  border-radius: 100px 0 0 100px;
+}
+
+#two .box {
+  border-radius: 0 100px 100px 0;
+}
+
+#contact .box{
+  border-radius: 20px;
+}
+
+#work h2, #contact h2 {
+  color: #fff;
+}
+
+#work p, #contact p {
+  color: #fff;
+  font-size: 2rem;
+}
+
+#contact .actions input {
+  background-color: #3BC1AC;
+}
+
+/********* My Work Gallery Styles ************/
+
+@media screen and (max-width: 718px) {
+  body .options {
+    min-width: 520px;
+ }
+  body .options .option:nth-child(5) {
+    display: none;
+ }
+}
+@media screen and (max-width: 638px) {
+  body .options {
+    min-width: 440px;
+ }
+  body .options .option:nth-child(4) {
+    display: none;
+ }
+}
+@media screen and (max-width: 558px) {
+  body .options {
+    min-width: 360px;
+ }
+  body .options .option:nth-child(3) {
+    display: none;
+ }
+}
+@media screen and (max-width: 478px) {
+  body .options {
+    min-width: 280px;
+ }
+  body .options .option:nth-child(2) {
+    display: none;
+ }
+}
+body .options .option {
+  position: relative;
+  overflow: hidden;
+  min-width: 60px;
+  margin: 10px;
+  background: var(--optionBackground, var(--defaultBackground, #e6e9ed));
+  background-size: auto 120%;
+  background-position: center;
+  cursor: pointer;
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+body .options .option:nth-child(1) {
+  --defaultBackground: #ed5565;
+}
+body .options .option:nth-child(2) {
+  --defaultBackground: #fc6e51;
+}
+body .options .option:nth-child(3) {
+  --defaultBackground: #2ecc71;
+}
+body .options .option:nth-child(4) {
+  --defaultBackground: #2ebccc;
+}
+body .options .option:nth-child(5) {
+  --defaultBackground: #5d64ec;
+}
+body .options .option:nth-child(6) {
+  --defaultBackground: #bd92ec;
+}
+
+/* **** Set Work Images **** */
+body .options .option:nth-child(1) {
+  --optionBackground: url(../../images/work/flower-03.jpg);
+}
+body .options .option:nth-child(2) {
+  --optionBackground: url(../../images/work/flying-books.jpg);
+}
+body .options .option:nth-child(3) {
+  --optionBackground: url(../../images/work/waterfall.jpg);
+}
+body .options .option:nth-child(4) {
+  --optionBackground: url(../../images/work/flower-04.JPG);
+}
+body .options .option:nth-child(5) {
+  --optionBackground: url(../../images/work/snaaaaaake.jpg);
+}
+body .options .option:nth-child(6) {
+  --optionBackground: url(../../images/work/banner-01.jpg);
+}
+
+body .options .option.active {
+  flex-grow: 10000;
+  transform: scale(1);
+  max-width: 600px;
+  margin: 0px;
+  border-radius: 40px;
+  background-size: auto 100%;
+ /*&:active {
+    transform:scale(0.9);
+ }
+ */
+}
+body .options .option.active .shadow {
+  box-shadow: inset 0 -120px 120px -120px black, inset 0 -120px 120px -100px black;
+}
+body .options .option.active .label {
+  bottom: 20px;
+  left: 20px;
+}
+body .options .option.active .label .info > div {
+  left: 0px;
+  opacity: 1;
+}
+body .options .option:not(.active) {
+  flex-grow: 1;
+  border-radius: 30px;
+}
+body .options .option:not(.active) .shadow {
+  bottom: -40px;
+  box-shadow: inset 0 -120px 0px -120px black, inset 0 -120px 0px -100px black;
+}
+body .options .option:not(.active) .label {
+  bottom: 10px;
+  left: 10px;
+}
+body .options .option:not(.active) .label .info > div {
+  left: 20px;
+  opacity: 0;
+}
+body .options .option .shadow {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: 120px;
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+body .options .option .label {
+  display: flex;
+  position: absolute;
+  right: 0px;
+  height: 40px;
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+body .options .option .label .icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-width: 40px;
+  max-width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: white;
+  color: var(--defaultBackground);
+}
+body .options .option .label .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+  color: white;
+  white-space: pre;
+}
+body .options .option .label .info > div {
+  position: relative;
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95), opacity 0.5s ease-out;
+}
+body .options .option .label .info .art-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: left;
+}
+body .options .option .label .info .sub {
+  transition-delay: 0.1s;
+}
+
+#work .options {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content:center;
+  overflow: hidden;
+  min-width: 600px;
+  width: calc(100% - 100px);
+  height: 400px;
+  max-width: 100%;
+  /* border: 2px solid yellow; */
+  height: 70vh;
+}
+
+
+#work, #work .main, #work .content, #work .work-content {
+  margin: 0;
+  padding: 0;
+}
+
+#work {
+  /* border: 3px solid blue; */
+  padding: 1rem 0;
+  height: 100vh;
+}
+
+#work .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  /* border: 2px solid red; */
+  max-width: 100%;
+  padding-bottom: 3rem;
+}
+
+#work .active{
+  max-width: 600px;
+  background-size: cover;
+}
+
+#work .option:not(.active) {
+  max-width: 80px;
+  /* border: 2px solid green; */
+  margin-bottom: 0;
+}
+
+
+#work header {
+  /* border: 2px solid green; */
+  margin-bottom: 0;
 }
